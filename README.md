@@ -1,4 +1,30 @@
+# Overview of mass balance satellite Earth Observation (EO) techniques
+
+The are three main geodetic technologies (`satellite geodesy') to measure ice mass balance:
+- gravimetry (gravitational mass balance)
+    - GRACE(-FO) are the main source of measurment.
+    - relies heavily on GIA (glacial isostratic adjusments) to disentangle variance in the gravity field due to mass balance and solid earth effects like the rebound (uncertainty)
+- altimetry (altimetry mass balance) 
+    - radar altimetry (older)
+    - laser altimetry (newer) 
+    - estimate mass change via volume change (most uncertainty from converting volume to mass as it relies on density models of ice and firn)
+    - minor GIA adjustment
+    - resolved spatial detail
+- input-output (relies on interferometry (InSAR))
+
+- Various satellite methods differ in their strengths and wekanesses.
+
+Overview of [IMBIE studies](http://imbie.org/):
+
+- IMBIE 1 (2012)
+- IMBIE 2 (2018)
+- IMBIE 3 (2023)
+
 # Data
+
+# gmb data
+
+Various Level-3 (gridded) data products are published by JPL, GFZ and CSR, which are all based on the identical raw GRACE(-FO) Level-1 satellite observations. See the [GRACE Tellus website](https://grace.jpl.nasa.gov/data/choosing-a-solution/) for more details. The largest categorical difference among data sets is between mascon (mass concentration) solutions and spherical harmonics kernels.
 
 [COST-G gridded data via GFZ](https://gravis.gfz-potsdam.de/ais) This is a combination product combining multiple L2 data including GFZ. The spatial resolution is 50km x 50km. Gravitational mass balance change is reported in kg/m^2 relative to the long-term average from 2002-04 to 2020-03, to reduce the effect of noise or seasonal patterns that might impact any single time slice (i.e. field). RL stands for release.
 - [COST-G website](https://cost-g.org/)
@@ -6,7 +32,15 @@
 EGU abstract:
 Groh, A., and Horwath, M. (2016). The method of tailored sensitivity kernels for GRACE mass change estimates. Geophysical Research Abstracts, 18, EGU2016-12065.
 
+[JPL RL06.1_v03 monthly mass grid mascons](https://grace.jpl.nasa.gov/data/get-data/jpl_global_mascons/) This is the latest JPL product on 0.5 degrees resolution (50 km). View [here](https://grace.jpl.nasa.gov/data/data-analysis-tool/). Download data (netcdf) via [PODAAC](https://podaac.jpl.nasa.gov/dataset/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.1_V3). Uncertainty estimate provided.
+
 [Copernicus gmb](https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.38b9366c?tab=overview) This appears to not be gridded data, but basin-level data according to [this documentation](https://confluence.ecmwf.int/pages/viewpage.action?pageId=355348674).
+
+# amb data
+
+https://digital.lib.washington.edu/researchworks/handle/1773/45388
+
+Ben Smith et al., Pervasive ice sheet mass loss reflects competing ocean and atmosphere processes. Science368,1239-1242(2020). DOI: 10.1126/science.aaz5845
 
 ## Visualisations
 
