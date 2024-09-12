@@ -32,7 +32,7 @@ Various Level-3 (gridded) data products are published by JPL, GFZ and CSR, which
 EGU abstract:
 Groh, A., and Horwath, M. (2016). The method of tailored sensitivity kernels for GRACE mass change estimates. Geophysical Research Abstracts, 18, EGU2016-12065.
 
-[JPL RL06.1_v03 monthly mass grid mascons](https://grace.jpl.nasa.gov/data/get-data/jpl_global_mascons/) This is the latest JPL product on 0.5 degrees resolution (50 km). View [here](https://grace.jpl.nasa.gov/data/data-analysis-tool/). Download data (netcdf) via [PODAAC](https://podaac.jpl.nasa.gov/dataset/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.1_V3). Uncertainty estimate provided.
+[JPL RL06.1_v03 monthly mass grid mascons](https://grace.jpl.nasa.gov/data/get-data/jpl_global_mascons/) This is the latest JPL product on 0.5 degrees resolution (50 km). View [here](https://grace.jpl.nasa.gov/data/data-analysis-tool/). Download data (netcdf) via [PODAAC](https://podaac.jpl.nasa.gov/dataset/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.1_V3). Uncertainty estimates are provided.
 
 [Copernicus gmb](https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.38b9366c?tab=overview) This appears to not be gridded data, but basin-level data according to [this documentation](https://confluence.ecmwf.int/pages/viewpage.action?pageId=355348674).
 
@@ -46,7 +46,7 @@ Ben Smith et al., Pervasive ice sheet mass loss reflects competing ocean and atm
 
 [NASA visualisation](https://svs.gsfc.nasa.gov/31158/):
 
-This animation shows **gravitational mass balance (gmb)** of the AIS (Antarctic ice sheet) over time. Note: This visualisation is relative to 2012, i.e. the cumulative mass loss/mass gain is presented. The line plot on the left shows gigatonnes [gt] and the visualisation on the right shows meters water equivalent. The data also originates from Gravity Recovery and Climate Experiment (GRACE) twin satellites and GRACE Follow-On (GRACE-FO) twin satellites, but processes by JPL. A mass loss of 142 gt/year is reported. The visualisation is probably based on a JPL GRACE product (L2 or mascon).
+This animation shows **gravitational mass balance (gmb)** of the AIS (Antarctic ice sheet) over time. Note: This visualisation is relative to 2012, i.e. the cumulative mass loss/mass gain is presented. The line plot on the left shows gigatonnes [gt] and the visualisation on the right shows meters water equivalent. The data also originates from Gravity Recovery and Climate Experiment (GRACE) twin satellites and GRACE Follow-On (GRACE-FO) twin satellites, but processes by JPL. A mass loss of 142 gt/year is reported. The visualisation is based on a JPL GRACE (MASCON CRI GRID RL06.1 V3).
 
 [GFZ/COST-G visualisation](https://gravis.gfz-potsdam.de/ais)
 
@@ -98,6 +98,11 @@ Groh, A., and Horwath, M. (2016). The method of tailored sensitivity kernels for
 - fine tuning
 - other off-diagonal initialisation
 
+# Research ideas:
+- pure KL divergence approach:
+- how do we combine the notion of uncertainty and general aqcuition functions with that of KL
+- KL * high mass loss 
+
 # Data
 - Level 3 data from GRACE and GRACE-FO
 - https://cost-g.org/ 
@@ -129,4 +134,4 @@ https://icesat-2.gsfc.nasa.gov/sites/default/files/page_files/ICESat2_ATL1415_AT
 https://nsidc.org/data/atl14/versions/3
 
 Operation ice bridge
-https://nsidc.org/data/iodem3/versions/1
+https://nsidc.org/data/iodem3/versions/1# massbalanceAntarctica
