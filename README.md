@@ -32,7 +32,7 @@ Various Level-3 (gridded) data products are published by JPL, GFZ and CSR, which
 EGU abstract:
 Groh, A., and Horwath, M. (2016). The method of tailored sensitivity kernels for GRACE mass change estimates. Geophysical Research Abstracts, 18, EGU2016-12065.
 
-[JPL RL06.1_v03 monthly mass grid mascons](https://grace.jpl.nasa.gov/data/get-data/jpl_global_mascons/) This is the latest JPL product on 0.5 degrees resolution (50 km). View [here](https://grace.jpl.nasa.gov/data/data-analysis-tool/). Download data (netcdf) via [PODAAC](https://podaac.jpl.nasa.gov/dataset/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.1_V3). Uncertainty estimates are provided.
+[JPL RL06.1_v03 monthly mass grid mascons](https://grace.jpl.nasa.gov/data/get-data/jpl_global_mascons/) This is the latest JPL product on 0.5 degrees resolution (50 km). View [here](https://grace.jpl.nasa.gov/data/data-analysis-tool/). Download data (netcdf) via [PODAAC](https://podaac.jpl.nasa.gov/dataset/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.1_V3). Uncertainty estimates are provided. Some more information are provided on this [sea level website](https://sealevel.nasa.gov/).
 
 [Copernicus gmb](https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.38b9366c?tab=overview) This appears to not be gridded data, but basin-level data according to [this documentation](https://confluence.ecmwf.int/pages/viewpage.action?pageId=355348674).
 
@@ -72,7 +72,6 @@ Groh, A., and Horwath, M. (2016). The method of tailored sensitivity kernels for
 
 # Next steps
 - Interpolate data to generate more time stamps.
-- 
 
 # DeepSensor Questions
 - Can we change the initialisation (prior) of the covariances?
