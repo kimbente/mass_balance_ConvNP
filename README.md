@@ -1,4 +1,16 @@
-# Overview of mass balance satellite Earth Observation (EO) techniques
+# mass_balance ConvNP
+
+In this repository I explore the use of a **Convolutional Neural Processes** to model **spatiotemporal surface mass balance** across Antarcica using the Alan Turing's [Deepsensor](https://github.com/alan-turing-institute/deepsensor) python package. 
+
+The model produces interesting and realistic covariance structures, such as the following, which shows higher covariance among the West Antarctic Ice Sheet and a drop in covariance at the Transantarctic mountains. 
+![Covariance_WAIS](https://github.com/kimbente/mass_balance_ConvNP/blob/master/vis/covariance_WAIS.png)
+Such covaraince structures may be further exploited in sensor placement tasks. 
+
+Samples from the posterior distribution, contitioned on "station" observations, show the uncertainty entailed in interpolating the observations across the vast continent:
+
+![Posterior samples](https://github.com/kimbente/mass_balance_ConvNP/blob/master/vis/posterior_samples.png)
+
+## Overview of mass balance satellite Earth Observation (EO) techniques
 
 The are three main geodetic technologies (`satellite geodesy') to measure ice mass balance:
 - gravimetry (gravitational mass balance)
